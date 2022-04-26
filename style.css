@@ -1,0 +1,262 @@
+body{
+    background-color: #daf1fb;
+    height: 100%;
+    display: grid;
+}
+
+
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: auto(12, 1fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    }
+    
+ /* BANNER */
+
+.logo {
+     grid-area: 1 / 1 / 2 / 2; 
+    background-image: url(./Imagenes/logo.png); 
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 5cm;
+    margin-left: 20px;
+    }
+
+
+.banner { 
+
+    grid-area: 1 / 2 / 2 / 6; 
+    background-image: url(./Imagenes/banner.jpg); 
+  
+}
+
+
+.header { 
+    grid-area: 2 / 1 / 3 / 5;
+    display: inline-block;
+    
+    
+}
+
+
+
+.botones li{
+    display: inline-block;
+    margin: 15px;
+    border: solid 1px #45829c;
+    padding: 10px;
+    background-color: #74BCDB;
+    margin-inline-end: 165px ;
+    
+}
+
+
+.botones:link {
+    color: blueviolet;
+    }
+
+.botones:visited {
+    color: gray;
+}
+
+
+.botones:hover {
+    color: rgb(34, 0, 255);
+}
+
+
+.botones:active {
+    color: red;
+}
+
+
+/*INDEX */
+
+
+
+.titulos {
+     grid-area: 3 / 1 / 4 / 3;
+    
+    }
+
+
+.titulos h1{ 
+    grid-area: 3 / 1 / 4 / 3;
+        
+    color: #15536d;
+    font-size: 70px;
+    
+       
+        
+}
+    
+.titulos h2 {
+    grid-area: 3 / 2 / 4 / 3;
+    color: gray;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    padding: 20px;
+    font-size: 35px;
+        
+            
+        
+}
+
+
+
+
+.texto { 
+    grid-area: 4 / 2 / 6 /4;
+    background-color: #D4D3DB;
+    color: #4b4a4f;
+    align-items: center;
+
+}
+
+.parrafoindex {
+    text-align:justify;
+    padding-left: 1px;
+    
+    padding: 40px 70px 20px 30px;
+
+}
+
+
+/* QuienesSomos */
+
+
+.FotoMayor{
+    grid-area: 4 / 1 / 6 /4;
+    padding: 20px;
+    
+
+
+}
+
+.textohistoria{
+    grid-area: 6 / 1 / 6 /6;
+    text-align: justify;
+    padding: 20px;
+    color: #15536d;
+    display: inline-block;
+}
+
+
+/* Actividades */
+
+.fotocarruaje{
+    grid-area: 4 / 1 / 6 /4;
+    padding: 10px 20px 5px 20px;
+}
+
+.convivencia{
+    grid-area: 7 / 1 / 7 / 6; 
+    color: gray;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    padding: 20px;
+    font-size: 30px;
+}
+
+.fotoconvivencia{
+    grid-area: 8 / 1/ 8 / 6;
+    padding: 10px 20px 5px 20px;
+}
+
+.textoconvivencia{
+    grid-area: 15 / 1/ 15 / 6;
+    text-align: justify;
+    padding: 20px;
+    color: #15536d;
+    display: inline-block;
+}
+
+
+/* Contactos*/
+
+.formulario {
+    grid-area: 4 / 1 / 7 / 3;
+    font-style: oblique;
+    color: #15536d;
+}
+
+.mapa {
+    grid-area: 4 / 3 / 7 / 5;
+
+
+}
+
+
+
+/* Footer */
+
+
+.footer { 
+    grid-area: 7 / 1 / 7 / 6; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #74BCDB;
+    
+    
+    
+}
+
+
+.footerActividades{
+    grid-area: 16 / 1 / 16 / 6; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #74BCDB;
+
+}
+
+.footerQuienes { 
+    grid-area: 7 / 1 / 7 / 6; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #74BCDB;
+    
+    
+    
+    
+}
+
+.imagen_redes_face {
+    width: 75px;
+    height: 80px;
+   
+    display: inline-block;
+    padding: 10px;
+    
+}
+
+.imagen_redes_instagram {
+    width: 100px;
+   
+    display: inline-block;
+    
+    
+
+}
+
+
+@media (min-width: 600px) and (max-width: 1000px) {
+    main {
+      grid-template-columns: 200px 1fr 200px;
+      grid-template-rows: 150px
+        100px
+        1fr
+        100px;
+      grid-template-areas:
+        "my-header my-header my-header"
+        "my-nav my-nav my-nav"
+        "my-aside my-section my-section"
+        "my-footer my-footer my-footer"
+    }
+  }
+
+
