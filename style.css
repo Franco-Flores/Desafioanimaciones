@@ -1,5 +1,9 @@
 body{
-    background-color: #daf1fb;
+    background: linear-gradient(178deg, #87c2d0, #1062c1);
+    background-size: 400% 400%;
+
+    -o-animation: AnimationName 37s ease infinite;
+    animation: AnimationName 37s ease infinite;
     height: 100%;
     display: grid;
 }
@@ -39,8 +43,12 @@ body{
     display: inline-block;
     
     
+    
 }
 
+.botones{
+    
+}
 
 
 .botones li{
@@ -50,6 +58,8 @@ body{
     padding: 10px;
     background-color: #74BCDB;
     margin-inline-end: 165px ;
+    text-shadow: 0 1px 1px rgba(0,0,0,0.5);
+	background:#aad2ec
     
 }
 
@@ -63,8 +73,9 @@ body{
 }
 
 
-.botones:hover {
-    color: rgb(34, 0, 255);
+.botones li:hover {
+    text-shadow: 0 1px 1px rgba(0,0,0,0.5);
+	background:#4a95ab
 }
 
 
@@ -259,4 +270,13 @@ body{
     }
   }
 
-
+  @-o-keyframes AnimationName {
+    0%{background-position:41% 0%}
+    50%{background-position:60% 100%}
+    100%{background-position:41% 0%}
+}
+@keyframes AnimationName {
+    0%{background-position:41% 0%}
+    50%{background-position:60% 100%}
+    100%{background-position:41% 0%}
+}
